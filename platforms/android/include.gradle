@@ -1,0 +1,7 @@
+android {
+  productFlavors {
+    "nativescript-ringer" {
+      dimension "nativescript-ringer"
+    }
+  }
+}

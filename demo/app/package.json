@@ -1,0 +1,7 @@
+{
+	"name": "nativescript-ringer-demo",
+	"main": "app.js",
+	"version": "1.0.0",
+	"author": "k3yb0ardn1nja",
+	"description": "Nativescript example app using the Android Ringer plugin."
+}

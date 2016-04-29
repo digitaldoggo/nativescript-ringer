@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <StackLayout>
+    <Label text="Volume Controller" class="title"/>
+    <Button text="Volume +" tap="volumeUp" />
+    <Button text="Volume -" tap="volumeDown" />
+    <Button text="Vibrate Mode" tap="setVibrate" />
+    <Button text="Silent Mode" tap="setSilent" />
+    <Button text="Normal Mode" tap="setNormal" />
+    <Button text="Mute" tap="mute" />
+    <Button text="UnMute" tap="unmute" />
+    <Button text="Toggle Mute" tap="toggleMute" />    
+  </StackLayout>
+</Page>

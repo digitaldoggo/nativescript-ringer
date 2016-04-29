@@ -1,0 +1,12 @@
+{
+	"nativescript": {
+		"id": "org.nativescript.ringerDemo",
+		"tns-android": {
+			"version": "1.7.1"
+		}
+	},
+	"dependencies": {
+		"nativescript-ringer": "0.0.1",
+		"tns-core-modules": "1.7.1"
+	}
+}

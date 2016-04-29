@@ -1,0 +1,11 @@
+{
+	"name": "nativescript-ringer",
+	"version": "0.0.1",
+	"description": "A plugin for controlling the ringer volume and mode in NativeScript Android apps.",
+	"main": "index.js",
+	"nativescript": {
+		"platforms": {
+			"android": "1.7.1"
+		}
+	}
+}
