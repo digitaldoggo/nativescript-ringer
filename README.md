@@ -56,8 +56,14 @@ Toggle Mute:
 ringer.toggleMute();
 ```
 
-Set Ringer Mode ("silent", "vibrate", or "normal"):
+Set Ringer Mode to "silent", "vibrate", or "normal"):
 
 ```js
 ringer.setMode("vibrate");
+```
+
+Get Current Ringer Mode ("silent", "vibrate", or "normal"):
+
+```js
+ringer.getMode();
 ```
