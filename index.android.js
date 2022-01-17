@@ -1,7 +1,9 @@
-const application = require("application");
+import { Utils } from "@nativescript/core";
 
-const packageManager = application.android.currentContext.getPackageManager();
-const audioManager = new android.media.AudioManager(application.android.currentContext);
+const currentContext = Utils.android.getApplicationContext();
+
+const packageManager = currentContext.getPackageManager();
+const audioManager = new android.media.AudioManager(currentContext);
 const AudioManager = android.media.AudioManager;
 
 const ringerTypes = {
@@ -15,7 +17,7 @@ const lastVolume =
     ? audioManager.getStreamMaxVolume(AudioManager.STREAM_RING)
     : audioManager.getStreamVolume(AudioManager.STREAM_RING);
 
-const ringer = {
+export const ringer = {
   increaseVolume: function () {
     audioManager.adjustStreamVolume(
       AudioManager.STREAM_RING,
@@ -88,5 +90,3 @@ const ringer = {
     }
   },
 };
-
-module.exports = ringer;
