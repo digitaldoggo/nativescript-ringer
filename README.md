@@ -6,16 +6,16 @@ A plugin for controlling the ringer volume and mode in NativeScript Android apps
 
 Run the following command from the root of your project:
 
-```
+```sh
 $ tns plugin add nativescript-ringer
 ```
 
 ## Usage
 
-To use the ringer module you must first `require()` it:
+To use the ringer module you must first `import` it:
 
 ```js
-var ringer = require("nativescript-ringer");
+import { ringer } from "nativescript-ringer";
 ```
 
 After you have a reference to the module you can make calls to its methods like in the examples below.
@@ -56,8 +56,14 @@ Toggle Mute:
 ringer.toggleMute();
 ```
 
-Set Ringer Mode ("silent", "vibrate", or "normal"):
+Set Ringer Mode to ("silent", "vibrate", or "normal"):
 
 ```js
 ringer.setMode("vibrate");
+```
+
+Get Current Ringer Mode. (returns "silent", "vibrate", or "normal"):
+
+```js
+ringer.getMode();
 ```
